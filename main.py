@@ -1,4 +1,15 @@
-from View.Terminal import benutzereingabe
+from Controller import Logic
+from View import View
 
-if __name__ == "__main__":
-    benutzereingabe()
+"""
+Dieses Script ist der Entrypoint. Es startet alles Methoden nach und nach
+um ein Ablauf zu gewährleisten
+"""
+
+Logic.generateStrings()
+View.getInput()
+Logic.getHelmets()
+View.printHelmet()
+
+
+
